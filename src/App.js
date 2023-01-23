@@ -1,14 +1,14 @@
 import './App.css';
 import { useState } from 'react';
-import bakeryData from './assets/bakery-data.json';
+import diceData from './assets/dice-data.json';
 import ShoppingCart from './components/ShoppingCart';
 import SortMenu from './components/SortMenu';
 import FilterBox from './components/FilterBox';
-import BakeryItem from './components/BakeryItem';
+import DiceItem from './components/DiceItem';
 
 // reused a lot of the code from my react-studio assignment
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
-bakeryData.forEach((item) => {
+diceData.forEach((item) => {
   item.image = process.env.PUBLIC_URL + "/" + item.image;
 });
 /* ############################################################## */
@@ -143,9 +143,9 @@ function App() {
     
     <div className="App">
       <h1> Polyhedral Dice Store </h1>
-      {/* apply filters and sorting and pass props to each BakeryItem(item) componenet to render them */}
-      {applyConditions(bakeryData).map((item) => (
-      <BakeryItem item={item} add={addItem} remove={removeItem}/>
+      {/* apply filters and sorting and pass props to each DiceItem(item) componenet to render them */}
+      {applyConditions(diceData).map((item) => (
+      <DiceItem item={item} add={addItem} remove={removeItem}/>
       ))}
       <SortMenu addSort={addSort}/>
       {/* pass props to ShoppingCart(aggregator) componenet and render it */}
