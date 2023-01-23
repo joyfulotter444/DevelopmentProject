@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Blue Opaque d4",
+    "description": "blue 4-sided opaque die",
+    "price": 0.49,
+    "image": "images/opaque-blue-d4-top-read__48941.jpg",
+    "numSides": 4,
+    "color": "blue",
+    "style": "opaque",
+    "popularity": 1
+  },
+  {
+    "name": "Red Speckled d20",
+    "description": "red 20-sided speckled die",
+    "price": 0.78,
+    "image": "images/d20-dice-speckled-silver-volcano__12727.jpg",
+    "numSides": 20,
+    "color": "red",
+    "style": "speckled",
+    "popularity": 2
+  },
+  {
+    "name": "Blue Translucent d4",
+    "description": "blue 4-sided translucent die",
+    "price": 1.30,
+    "image": "images/d4-dice-numeral-transparent-blue__95122.jpg",
+    "numSides": 4,
+    "color": "blue",
+    "style": "translucent",
+    "popularity": 3
+  },
+  {
+    "name": "Green Opaque d20",
+    "description": "green 20-sided opaque die",
+    "price": 0.49,
+    "image": "images/green-d20__66177.jpg",
+    "numSides": 20,
+    "color": "green",
+    "style": "opaque",
+    "popularity": 4
+  },
+  {
+    "name": "Red Translucent d4",
+    "description": "red 4-sided translucent die",
+    "price": 1.30,
+    "image": "images/d4-dice-numeral-transparent-red__98523.jpg",
+    "numSides": 4,
+    "color": "red",
+    "style": "translucent",
+    "popularity": 5
+  },
+  {
+    "name": "Green Opaque d10",
+    "description": "green 10-sided opaque die",
+    "price": 0.49,
+    "image": "images/d10-green-chessex-dice__26885.jpg",
+    "numSides": 10,
+    "color": "green",
+    "style": "opaque",
+    "popularity": 6
+  },
+  {
+    "name": "Red Speckled d10",
+    "description": "red 10-sided speckled die",
+    "price": 0.78,
+    "image": "images/d10-silver-volcano-chessex-dice__59150.jpg",
+    "numSides": 10,
+    "color": "red",
+    "style": "speckled",
+    "popularity": 7
+  },
+  {
+    "name": "Red Translucent d20",
+    "description": "red 20-sided translucent die",
+    "price": 1.30,
+    "image": "images/d20-dice-transparent-red__89003.jpg",
+    "numSides": 20,
+    "color": "red",
+    "style": "translucent",
+    "popularity": 8
+  },
+  {
+    "name": "Green Speckled d4",
+    "description": "green 4-sided speckled die",
+    "price": 0.78,
+    "image": "images/4-sided-dice-recon__93228.jpg",
+    "numSides": 4,
+    "color": "green",
+    "style": "speckled",
+    "popularity": 9
+  },
+  {
+    "name": "Blue Speckled d10",
+    "description": "blue 10-sided speckled die",
+    "price": 0.78,
+    "image": "images/d10-water-chessex-dice__96574.jpg",
+    "numSides": 10,
+    "color": "blue",
+    "style": "speckled",
+    "popularity": 10
+  },
+  {
+    "name": "Green Translucent d10",
+    "description": "green 10-sided translucent die",
+    "price": 1.30,
+    "image": "images/d10-dice-transparent-green__28875.jpg",
+    "numSides": 10,
+    "color": "green",
+    "style": "translucent",
+    "popularity": 11
+  },
+  {
+    "name": "Blue Opaque d20",
+    "description": "blue 20-sided opaque die",
+    "price": 0.49,
+    "image": "images/blue-d20__73081.jpg",
+    "numSides": 20,
+    "color": "blue",
+    "style": "opaque",
+    "popularity": 12
+  }
+]
