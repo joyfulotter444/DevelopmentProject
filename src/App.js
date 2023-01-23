@@ -14,7 +14,7 @@ bakeryData.forEach((item) => {
 /* ############################################################## */
 
 function App() {
-  /* add your cart state code here here */
+  /* add your cart state code here */
   const[cartContents, updateCart] = useState([]);
   const[cartTotal,updateTotal] = useState(0);
   /* for filters by default all values are checked */
