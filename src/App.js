@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import bakeryData from "../public/assets/bakery-data.json";
+import bakeryData from "src/assets/bakery-data.json";
 import ShoppingCart from "./components/ShoppingCart";
 import SortMenu from "./components/SortMenu";
 import FilterBox from "./components/FilterBox";
