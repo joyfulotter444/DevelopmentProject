@@ -41,8 +41,8 @@ sections of similar items that users would find in a real store
 
 ### Organization of Components
 There are five components: ShoppingCart, SortMenu, FilterBox, DiceItem,
-and the parent componenet of them all: App. ShoppingCart handles the functions
-and visual appearance of the shopping cart section, SortMenu handles sorting
+and the parent componenet of them all: App. ShoppingCart handles the 
+visual appearance of the shopping cart section, SortMenu handles sorting
 and the radio buttons for sorting, FilterBox is used for each of the check boxes
 which are organized into groups of three boxes for each filtering category 
 (color, style, number of sides), DiceItem is used to generate each item card
@@ -51,7 +51,21 @@ and App handles rendering and keeping track of state for most things.
 
 ### How Data is Passed Down Through Components
 The parent componenet App keeps track of the state of the shopping cart, and
-passes functions for adding and remove items to each of the DiceItems
+passes functions for adding and remove items to each of the DiceItems. The 
+DiceItems use those functions on click to update the state of the shopping cart
+list in the parent componenet, which passes the updated list to the ShoppingCart
+to display.
+App also keeps track of the state of the three filters with lists that keep
+track of which filters are selected or not selected. App passes a function
+to add or remove items from the filter lists to the FilterBox components, and
+the FilterBox components use those functions on click to update the state.
+SortMenu is the only component that has its own state and onClick function
+which it uses to keep track of which sorting radio button is selected. The App
+component passes a function to update the state of the sorting state that it
+also tracks, which the SortMenu uses onChange to set the state of the parent
+component.
 
 ### How the User Triggers State Changes
+As detailed above the user triggers state changes by clicking buttons, 
+unclicking or clicking checkboxes, or selecting radio buttons.
 
