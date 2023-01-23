@@ -1,10 +1,10 @@
 import "./App.css";
-import BakeryItem from "./components/BakeryItem.js";
 import { useState } from "react";
 import bakeryData from "./assets/bakery-data.json";
-import ShoppingCart from "./components/ShoppingCart.js";
-import SortMenu from "./components/SortMenu.js";
-import FilterBox from "./components/FilterBox.js";
+import ShoppingCart from "./components/ShoppingCart";
+import SortMenu from "./components/SortMenu";
+import FilterBox from "./components/FilterBox";
+import BakeryItem from "./components/BakeryItem";
 
 // reused a lot of the code from my react-studio assignment
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
