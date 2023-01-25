@@ -13,7 +13,7 @@ export default function SortMenu(props) {
 
   return  <div>
             <FormControl>
-              <FormLabel id="sort-buttons-group"> Sort By </FormLabel>
+              <FormLabel id="sort-buttons-group"> <h2>Sort By</h2></FormLabel>
               <RadioGroup
                 aria-labelledby="sort-buttons-group"
                 defaultValue="default"

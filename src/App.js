@@ -143,28 +143,44 @@ function App() {
     
     <div className="App">
       <h1> Polyhedral Dice Store </h1>
-      {/* apply filters and sorting and pass props to each DiceItem(item) componenet to render them */}
-      {applyConditions(diceData).map((item) => (
-      <DiceItem item={item} add={addItem} remove={removeItem}/>
-      ))}
-      <SortMenu addSort={addSort}/>
-      {/* pass props to ShoppingCart(aggregator) componenet and render it */}
-      <ShoppingCart cartContents={cartContents} cartTotal={cartTotal}/>
-      <h2> Color Filter </h2>
-      <p> <strong> showing: </strong>  | {colors.map((color => color + " | "))}</p>
-      <FilterBox onClick={editColor} value={"blue"} />
-      <FilterBox onClick={editColor} value={"red"}/>
-      <FilterBox onClick={editColor} value={"green"}/>
-      <h2> Number of Sides Filter </h2>
-      <p> <strong> showing: </strong>  | {sides.map((num => num + " sides " + " | "))}</p>
-      <FilterBox onClick={editSides} value={4} />
-      <FilterBox onClick={editSides} value={10}/>
-      <FilterBox onClick={editSides} value={20} />
-      <h2> Style Filter </h2>
-      <p> <strong> showing: </strong>  | {styles.map((style => style + " | "))}</p>
-      <FilterBox onClick={editStyle} value={"opaque"} />
-      <FilterBox onClick={editStyle} value={"translucent"}/>
-      <FilterBox onClick={editStyle} value={"speckled"}/>
+        <div className='row'>
+          <div className="filtersContainer">
+            <div className="filter">
+              <h2> Color Filter </h2>
+              <p> <strong> showing: </strong>  | {colors.map((color => color + " | "))}</p>
+              <FilterBox onClick={editColor} value={"blue"} />
+              <FilterBox onClick={editColor} value={"red"}/>
+              <FilterBox onClick={editColor} value={"green"}/>
+            </div>
+            <div className="filter">
+              <h2> Number of Sides Filter </h2>
+              <p> <strong> showing: </strong>  | {sides.map((num => num + " sides " + " | "))}</p>
+              <FilterBox onClick={editSides} value={4} />
+              <FilterBox onClick={editSides} value={10}/>
+              <FilterBox onClick={editSides} value={20} />
+            </div>
+            <div className="filter">
+              <h2> Style Filter </h2>
+              <p> <strong> showing: </strong>  | {styles.map((style => style + " | "))}</p>
+              <FilterBox onClick={editStyle} value={"opaque"} />
+              <FilterBox onClick={editStyle} value={"translucent"}/>
+              <FilterBox onClick={editStyle} value={"speckled"}/>
+            </div>
+            <div className="filter">
+              <SortMenu addSort={addSort}/>
+            </div>
+          </div>
+          <div className="ItemContainer">
+            {/* apply filters and sorting and pass props to each DiceItem(item) componenet to render them */}
+            {applyConditions(diceData).map((item) => (
+            <DiceItem item={item} add={addItem} remove={removeItem}/>
+            ))}
+          </div>
+          <div className='ShoppingContainer'>
+            {/* pass props to ShoppingCart(aggregator) componenet and render it */}
+            <ShoppingCart cartContents={cartContents} cartTotal={cartTotal}/>
+          </div>
+        </div>
     </div>
   );
 }

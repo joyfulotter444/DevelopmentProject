@@ -2,6 +2,38 @@
   text-align: center;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.filtersContainer{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  text-align: left;
+}
+
+.ItemContainer{
+  flex-grow: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: #52AEC9;
+  flex-basis: 100%;
+}
+
+.ShoppingContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter{
+  display: flex;
+  flex-direction: column;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
